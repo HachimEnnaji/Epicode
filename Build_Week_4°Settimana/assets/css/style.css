@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Outfit:wght@300;400;700&display=swap');
+
+body, .rate-us-sec-title, .rate-us-percentuale-risultato, .rate-us-question{
+    margin: 0;
+}
+.rate-us-sec-title, .rate-us-percentuale-risultato{
+    padding: 8px;
+}
+.questions-count, .questions-count span, #rate-us-under-title, #rate-us-button-rate, .rate-us-question{
+    font-size: 20px;
+}
+form #welcomeProceedBtn, button, .insideDonutText span{
+    font-size: 1rem;
+}
+body, #thisQuestion, #thisQuestion span{
+    font-size: 16px;
+}
+body, h1, .rate-us-question{
+    font-weight: 300;
+} 
+form #welcomeProceedBtn, button, form span, #rate-us-button-rate, .insideDonutText, #rate-us-title, .rate-us-percentuale-risultato{
+    font-weight: 700;
+}
+.questions-count, .questions-count span, h3, label:not(#checkmark){
+    font-weight: 400;
+}
+label:not(#checkmark), #thisQuestion, .questions, .questions-count, .rate-us-center, #rate-us-valutazione, .centeredText, div#stars, #formFeedback div:last-child{
+    text-align: center;
+}
+form #welcomeProceedBtn, button, label:not(#checkmark), #stars svg, #inviaDati, input[type="checkbox"]{
+    cursor:pointer;
+}
+form, form div, #rate-us-valutazione, .base-timer__label{
+    display:flex;
+    align-items: center;
+}
+.base-timer, .base-timer__label{
+    height: 100px;
+    width: 100px;
+}
+#rate-us-valutazione, .containerAnswer {
+    justify-content: space-around;    
+}
+input[type="checkbox"]:checked::before, body, label:not(#checkmark), #thisQuestion, .questions, .questions-count, #rate-us-button-rate, h3, textarea:focus{
+    color: white;
+}
+h3, .re-size, body{
+    font-family: 'Inter', sans-serif;
+}
+h1, h2, label:not(#checkmark), #thisQuestion, .questions, .questions-count{
+    font-family: 'Outfit', sans-serif;
+}
+
+body{
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 2em 4em;
+    min-width: 768px;
+    width: 50%;
+    margin: auto
+}
+
+#epicode-logo{
+    background-image: url(../img/epicode_logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 75px;
+}
+
+h1 {
+    font-size: 60px; 
+    line-height: 0.8em;
+}
+
+#boxQuestionAnswer{
+    margin-top: 8em;
+}
+
+h2{
+    color: #d20094;
+    font-size: 32px;
+}
+
+ul{
+    padding: 0;
+    margin: 2.5em 1.5em;
+    line-height: 1.5em;
+}
+
+form{
+    margin-top: 5em;
+    height: fit-content;
+    justify-content: space-between;
+}
+
+form #welcomeProceedBtn, button{
+    border-style: none;
+    background-color: #00FFFF;
+    box-shadow: 0 0 40px #00FFFF;
+    padding: 1.2em 3.5em;
+}
+#welcomeProceedBtn > span {
+    font-size: 1.2rem;
+}
+
+form span{
+    font-size: 0.85rem;
+}
+
+.containerAnswer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+label:not(#checkmark){
+    width: 30%;
+    margin-top: 30px;
+    border-radius: 50px;
+    border: 4px solid; 
+    border-color: white rgba(255, 255, 255, 0.507) rgba(255, 255, 255, 0.418) rgba(255, 255, 255, 0.219);
+    padding:20px 50px;
+    background-color: rgba(240, 248, 255, 0.151);
+}
+
+label:hover{ 
+    background: linear-gradient(0deg, rgba(121,0,121,1) 6%, rgba(173,0,143,1) 39%, rgba(187,1,155,1) 86%);
+}
+
+#thisQuestion{ 
+    font-stretch: expanded;
+    margin-top: 120px;
+}
+
+#thisQuestion span{
+    color:#a6018b;
+}
+
+.questions{
+    line-height: 1;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+
+input{
+    text-decoration-style: none;
+}
+
+.questions-count{
+    letter-spacing: 3px;
+    font-stretch: expanded;
+    margin-top: 120px;
+}
+
+.questions-count span{
+    color:#a6018b;
+}
+
+.question-container {
+    display: none;           
+    margin-bottom: 20px;
+}
+
+#mostraIlRisultato{
+    display: none;
+    width: 100%;
+}
+
+#app {
+    float: right;
+    }
+
+.rate-us-center {
+    margin: 10px;
+} 
+
+#rate-us-under-title {
+    font-weight: normal;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+}
+
+.rate-us-sec-title {
+    font-size: 55px;
+}
+
+#rate-us-rate {
+   display: flex;
+   justify-content: center;
+}
+
+#rate-us-grafico{
+    min-width: 576px;
+}
+
+#rate-us-button-rate {
+    background-color: transparent;
+    padding: 15px 60px;
+    border: 2px solid white;
+    margin: 30px;
+}
+
+#canvaContainer{
+    position: relative;
+    width: 75%;
+}
+
+#complimenti{
+    width: 40%;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+#rate-us-left-correct, #rate-us-right-content{
+    max-width: 195px;
+}
+
+.insideDonutText{
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+}
+
+.insideDonutText span{
+    color: #00FFFF;
+}
+
+#complimenti p{
+    font-size: 0.8rem;
+}
+
+.insideDonutText #failedExam{
+    color: #a6018b;
+}
+
+.base-timer {
+    position: relative;
+}
+
+.re-size {
+    font-size: 7px;
+}
+
+.base-timer__circle {
+    fill: none;
+    stroke: none;
+}
+
+.base-timer__path-elapsed {
+    stroke-width: 10px;
+    stroke: grey;
+    opacity: 0.3;
+}
+
+.base-timer__path-remaining {
+    stroke-width: 10px;
+    transform: rotate(90deg);
+    transform-origin: center;
+    transition: 1s linear all;
+    fill-rule: nonzero;
+}
+
+.base-timer__label {
+    position: absolute;
+    top: 0;
+    justify-content: center;
+    font-size: 28px;
+}
+
+#stars{
+    margin: 1em 0;
+    margin-bottom: 2em;
+}
+
+.active{
+    fill: #00FFFF;
+}
+
+textarea{
+    width: 95%;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    resize:none;
+    border-bottom: 2px solid #d20094;
+    margin-bottom: 3em;
+}
+
+textarea::placeholder{
+    font-family: 'Inter', 'sans-serif';
+    padding-inline-start: 20px;
+}
+
+textarea:focus{
+    outline: none;
+    font-family: 'Inter', 'sans-serif';
+}
+
+#formFeedback{
+    margin-top: 5em;
+    height: fit-content;
+    display: block;
+}
+
+#formFeedback div:last-child{
+    display: block;
+}
+
+input[type="checkbox"]{ 
+    appearance: none;       
+    height: 1.1rem;
+    width: 1.1rem;
+    box-shadow:  0 0 0 2px black;
+    border: 2px solid white;
+    vertical-align: bottom;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1em;
+}
+
+input[type="checkbox"]:checked::before{
+    content: "✓";
+    height: 1.2rem;
+    width: 0.6rem;    
+}

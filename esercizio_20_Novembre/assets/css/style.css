@@ -218,16 +218,19 @@ footer a {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-  header {
-    text-align: unset;
+  header{
+  text-align: unset;
   }
-  header > div,
-  header > nav {
-    display: inline-block;
+  div img{
     vertical-align: middle;
+    padding: unset;
+  }
+  header  div,
+  header  nav {
+    display: inline-block;
   }
   header p {
-    display: inline;
+    display: inline-block;
     margin: 0;
   }
 
@@ -265,20 +268,14 @@ footer a {
   ol {
     margin-left: 4em;
   }
-  iframe {
-    width: 50%;
-    margin: 0;
-    height: initial;
-  }
-  section {
-    width: 40%;
-    border-radius: 10px;
-    margin: 0;
-    width: 48%;
-  }
+  
   iframe,
   section {
+    height: 350px;
+    width: 49%;
     display: inline-block;
+    vertical-align: middle;
+    border-radius: 10px;
   }
   section > h2 {
     background-color: gray;
@@ -286,7 +283,8 @@ footer a {
   }
   aside div {
     display: inline-block;
-    margin: 0;
+    height: 340px;
+    vertical-align: middle;
     width: 33%;
   }
   footer {

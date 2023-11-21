@@ -28,13 +28,16 @@ header {
   margin-bottom: 1.5em;
   padding: 2em 1.5em;
 }
-.clearfix > h1 {
+h1 span {
   position: relative;
-  margin-bottom: 0;
+  white-space: nowrap;
 }
 .underline {
   position: absolute;
-  right: 4em;
+  right: 0;
+  left: 0;
+  bottom: -9px;
+  width: 100%;
 }
 .clearfix::after {
   content: "";
@@ -49,10 +52,10 @@ header {
   border-radius: 10px;
   z-index: 99;
   padding: 7px;
-  width: 30px;
   cursor: pointer;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   background-color: rgba(243, 239, 239, 0.5);
+  border: solid white 2px;
 }
 #topButton {
   bottom: 10px;
@@ -92,6 +95,7 @@ header {
   top: 10px;
   right: 10px;
   color: grey;
+  font-size: 48px;
 }
 
 /* button media query */
